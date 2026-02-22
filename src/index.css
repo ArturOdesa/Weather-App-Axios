@@ -7,6 +7,10 @@
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
 }
 
+body, html {
+  overflow: hidden;
+}
+
 .container {
   max-width: 1200px;
   display: flex;
@@ -35,6 +39,7 @@
     url("./assets/wrapper-bg.png") center/cover no-repeat;
   filter: blur(15px);
   z-index: -1;
+  transform: scale(1.1);
 }
 
 .content {
