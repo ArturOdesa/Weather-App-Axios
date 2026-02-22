@@ -1,0 +1,129 @@
+.header {
+  width: 100%;
+
+  &__search {
+    position: relative;
+    width: 85%;
+
+    & input {
+      width: 100%;
+      padding: 6px 0px 2px 12px;
+      border: none;
+      border-radius: 10px;
+      color: #6f6f6f;
+      background-color: rgba($color: #ffffff, $alpha: 0.77);
+      text-align: center;
+
+      &::placeholder {
+        color: #6f6f6f;
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    & button {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      background-color: transparent;
+      border: none;
+      right: 4px;
+      top: 4px;
+
+      & img {
+        width: 20px;
+      }
+    }
+  }
+}
+
+.info {
+  text-align: center;
+  margin-bottom: 48px;
+
+  & .alter {
+    color: #000000dd;
+  }
+
+  &__city_title {
+    color: #f8f8f8f5;
+    font-size: 48px;
+  }
+}
+
+.temp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 72px;
+  }
+
+  &__title {
+    color: #0049dcf2;
+    font-size: 40px;
+  }
+}
+
+.details {
+  width: 100%;
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas:
+      "date date"
+      "left right";
+
+    gap: 12px;
+    width: 100%;
+  }
+
+  &__date {
+    grid-area: date;
+    background-color: rgba($color: #ffffff, $alpha: 0.66);
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+
+    h3 {
+      color: #000000dd;
+    }
+
+    p {
+      color: #4f4f4f;
+    }
+  }
+
+  & .left,
+  & .right {
+    background-color: rgba($color: #ffffff, $alpha: 0.66);
+    border-radius: 12px;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  & .left {
+    grid-area: left;
+  }
+
+  & .right {
+    grid-area: right;
+  }
+}
+
+.weather__list {
+  list-style: none;
+  color: #000000dd;
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+}
