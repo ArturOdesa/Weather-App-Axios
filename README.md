@@ -1,16 +1,58 @@
-# React + Vite
+# Weather App 🌤️
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A small **React weather application** that automatically detects the user's location and displays the current weather in their city.  
+Users can also search for weather information in any other city.
 
-Currently, two official plugins are available:
+This project was built as a **learning project to practice working with APIs, geolocation, and React state management.**
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## ✨ Features
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+- Automatic **user geolocation detection**
+- Display of **current weather in the user's city**
+- **Search weather by city name**
+- API requests using **Axios**
+- Clean and simple UI
+- Styled with **SCSS**
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠 Tech Stack
+
+- **React**
+- **SCSS**
+- **Axios**
+- **Geolocation API**
+- **Weather API**
+
+---
+
+## ⚙️ How It Works
+
+1. When the application loads, the browser asks for permission to access the user's **location**.
+2. Using the **Geolocation API**, the app retrieves the user's coordinates.
+3. The coordinates are sent to the weather API using **Axios**.
+4. The application displays the **current weather in the detected city**.
+5. Users can search for weather in other cities using the search input.
+
+---
+
+## 📚 What I Practiced in This Project
+
+- Working with **external APIs**
+- Handling **asynchronous requests**
+- Managing **React state**
+- Implementing **geolocation features**
+- Structuring a small React application
+- Styling with **SCSS**
+
+---
+
+## 🔧 Possible Improvements
+
+- 5-day weather forecast
+- Weather icons and animations
+- Temperature unit switch (°C / °F)
+- Improved error handling
+- Better mobile responsiveness
